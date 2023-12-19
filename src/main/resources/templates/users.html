@@ -46,7 +46,7 @@
 					
 					<div class="d-sm-flex mb-4">
 						<a type="button" class="btn btn-primary"
-						   href="">Create</a>
+						   th:href="@{/create}">Create</a>
 					</div>
 					
 					<!-- Content Row -->
@@ -74,9 +74,9 @@
 										</button>
 										<div class="dropdown-menu">
 											<a class="dropdown-item"
-											   href="">Edit</a>
+											   th:href="@{/edit/{id} (id = ${user.id})}">Edit</a>
 											<a class="dropdown-item"
-											   href="">Delete</a>
+											   th:href="@{/delete/{id} (id = ${user.id})}">Delete</a>
 										</div>
 									</div>
 								</td>
